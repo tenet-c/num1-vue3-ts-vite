@@ -17,5 +17,14 @@ module.exports = {
     '@typescript-eslint'
   ],
   rules: {
-  }
+    'vue/no-mutating-props': 'off'
+  },
+  overrides: [
+    {
+      files: ['src/api/**/*.ts'],
+      rules: {
+        camelcase: 'off'
+      }
+    }
+  ]
 }
