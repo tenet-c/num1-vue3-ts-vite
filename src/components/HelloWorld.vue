@@ -1,7 +1,16 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+const prop = defineProps({
+  msg: {
+    type: String,
+    default: ''
+  }
+})
 
-defineProps<{ msg: string }>()
+const emit = defineEmits(['demoEmit'])
+emit('demoEmit')
+
+console.log(prop.msg)
 
 const count = ref(0)
 </script>
