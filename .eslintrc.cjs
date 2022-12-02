@@ -25,6 +25,7 @@ module.exports = {
   rules: {
     'vue/no-mutating-props': 'off'
   },
+  // 单独设定某些文件的验证规则
   overrides: [
     {
       files: ['src/api/**/*.ts'],

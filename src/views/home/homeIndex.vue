@@ -7,11 +7,13 @@
 </template>
 
 <script setup lang='ts'>
-import { useStore } from '../../store'
+import { useStore } from '@/store'
 const store = useStore()
 console.log(store.state.foo)
 </script>
 
-<style lang='less' scoped>
-
+<style lang='scss' scoped>
+span {
+  color: $red
+}
 </style>

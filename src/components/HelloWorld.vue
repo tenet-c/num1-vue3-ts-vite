@@ -51,8 +51,11 @@ const count = ref(0)
   </p>
 </template>
 
-<style scoped>
+<style lang="sass" scoped>
 .read-the-docs {
   color: #888;
+}
+h1 {
+  color: $red;
 }
 </style>
